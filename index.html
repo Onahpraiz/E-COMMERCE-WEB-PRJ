@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E COMMERCE APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PRASUFAVIC</h1>
+      <div id="cart-icon">🛒 Cart (<span id="cart-count">0</span>)</div>
+    </header>
+
+    <section class="introduction">
+      <p>
+        <b>
+          WELCOME TO PRASUFAVIC,
+          <br />
+          YOUR GO-TO ONLINE DESTINATION FOR TIMELESS AND FRESH FINDS.
+          <br />
+          WE BELEIVE SHOPPING SHOULD FEEL EFFORTLESS AND EVERY PRODUCT SHOULD
+          TELL A STORY YOU'LL LOVE.
+        </b>
+      </p>
+    </section>
+
+    <main>
+      <section class="products" id="product-list">
+        <!-- Products will be added dynamically -->
+      </section>
+
+      <fieldset>
+        <legend>
+          <b>BLACK FRIDAY - NOVEMBER 14TH.</b><br />
+          The countdown is on. Deal drops Friday, Nov 14 - 00:00UTC. <br />
+          Up to 40% OFF these merch displayed below. <br />
+          Ends Sunday midnight - Don't snooze...
+        </legend>
+        <section class="container">
+          <div class="slider">
+            <div class="slides">
+              <!-- Add as many images as you want -->
+              <img src="img1.jpg" class="slide active" alt="" />
+              <img src="img2.jpg" class="slide" alt="" />
+              <img src="img3.jpg" class="slide" alt="" />
+              <img src="img4.jpg" class="slide" alt="" />
+            </div>
+            <!-- Navigation buttons -->
+            <button class="prev" onclick="prevSlide()">&lt;</button>
+            <button class="next" onclick="nextSlide()">&gt;</button>
+          </div>
+        </section>
+      </fieldset>
+
+      <section class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button id="checkout-btn">Checkout</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-box">
+      <p>
+        © 2025 PRASUFAVIC. All rights reserved.
+        <br />
+        Contact us @ 09041473952.
+      </p>
+    </div>
+  </footer>
+</html>
